@@ -1,0 +1,388 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <title>Honey Website</title>
+    <style>
+        body{
+    background-image: url(background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+header{
+    height: 13vh;
+    border-bottom: 5px solid #CB6F18;
+    box-shadow: 1px 2px 10px 0.2px #ffa149;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header>ul{
+    list-style: none;
+    display: flex;
+}
+header> ul>li{
+    margin: 0px 10px;
+    padding: 9px 20px;
+    font-weight: 700;
+    color: #F99D1B;
+}
+header> ul>li:hover{
+    cursor: pointer;
+    border: 2px solid #F99D1B;
+    box-shadow: 1px 1px 10px 3px #ffa149;
+    border-radius: 8px;
+}
+header>img{
+    width: 6%;
+    height: 9vh;
+    margin-left: 5%;
+}
+header>.icons{
+    font-size: 1.2rem;
+    width: 15%;
+}
+header>.icons>i{
+    background-color: #F99D1B;
+    padding: 2%;
+    border-radius: 5px;
+    margin: 0px 5px;
+    color: white;
+}
+header>.icons>i:hover{
+    background-color: black;
+    color: white;
+    box-shadow: 1px 1px 10px 3px #ffa149;
+}
+.body>.text>img{
+    width: 10%;
+    margin-left: 2%;
+    margin-top: 2%;
+    position: relative;
+    top: 75%;
+    left: 60%;
+}
+.body>.text>h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    width: 40%;
+    margin-left: 8%;
+    margin-top: 0%;
+    color: white;
+    position: relative;
+    left: -50%;
+}
+.body>.text>p{
+    color: white;
+    letter-spacing: 2px;
+    margin-left: 8%;
+    width: 49%;
+    text-align: justify;
+}
+.body>.text>button{
+    margin-left: 8%;
+    padding: 0.9% 3.1%;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: white;
+    background-color: #F99D1B;
+    font-weight: 700;
+    font-size: 0.8rem;
+    border: 2px solid white;
+    box-shadow: 1px 1px 5px 1px #b85a03;
+    margin-top: 1%;
+    margin-bottom: 2%
+}
+.body{
+    display: flex;
+}
+.body>.text>button:hover{
+    background: none;
+    cursor: pointer;
+    box-shadow: 3px 3px 50px 10px #F99D1B;
+}
+#a2{
+    position: absolute;
+    top: 30%;
+    left: 44%;
+    width: 5%;
+}
+.pic>img{
+    height: 75vh;
+}
+.pic{
+    margin-right: 10%;
+    margin-top: 3%;
+    margin-bottom: 2%;
+}
+#leaf1{
+    position: relative;
+    animation-name: leaf;
+    animation-duration: 4s;
+    animation-delay: 3.5s;
+    animation-fill-mode: forwards;
+    z-index: 5;
+    animation-timing-function: ease-in;
+}
+
+@keyframes leaf {
+    form {
+        left : 65%;
+        top : 75%;
+    }
+    to { 
+        left: 0%;
+        top: 0%;
+    }
+}
+.body>.text>h1{
+    position: relative;
+    animation-name: h1;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+@keyframes h1 {
+    form {
+        left: -50%;
+    }
+    to{
+        left: 0%;
+    }
+}
+.body>.text>p{
+    position: relative;
+    left: -60%;
+    animation-name: h1;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+.body>.text>button{
+    position: relative;
+    left: -60%;
+    animation-name: h1;
+    animation-duration: 3s;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+#a2{
+    position: absolute;
+    animation-name: leaf2;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+@keyframes leaf2 {
+    form {
+        width: 5%;
+    }
+    to{
+        width: 15%;
+    }
+}
+.pic>img{
+    position: relative;
+    right: -200%;
+    animation-name: pic;
+    animation-duration: 3s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+@keyframes pic {
+    form {
+        right: -50%;
+    }
+    to{
+        right: 0%;
+    }
+}
+#b1{
+    position: absolute;
+    top: 5%;
+    animation-name: bee1;
+    animation-duration: 8s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+
+}
+#b2{
+    width: 4%;
+    position: absolute;
+    bottom: 5%;
+    animation-name: bee2;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 1.5s;
+    animation-timing-function: linear;
+
+}
+#b3{
+    width: 5%;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    animation-name: bee3;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 1.5s;
+    animation-timing-function: linear;
+}
+#b4{
+    width: 4%;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    animation-name: bee4;
+    animation-duration: 7s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes bee1 {
+    0% {
+        top : 5%;
+        left: 5%;
+    }  
+    100% {
+        top: 70%;
+        left: 70%;
+    }  
+}
+@keyframes bee2 {
+    0% {
+        top : 80%;
+        left: 40%;
+    }  
+    100% {
+        top: 3%;
+        left: 40%;
+    }  
+}
+@keyframes bee3 {
+    0% {
+        top : 80%;
+        left: 50%;
+    }  
+    100% {
+        top: 3%;
+        left: 80%;
+    }  
+}
+@keyframes bee4 {
+    0% {
+        top : -50%;
+        left: 200%;
+    }  
+    100% {
+        top: 50%;
+        left: 2%;
+    } 
+}
+.about{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 2px 2px #b85a03;
+    font-size: 20px;
+    margin: 0%;
+}
+.about::after{
+    content: "";
+    width: 1%;
+    height: 10%;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    background-color: #F99D1B;
+    animation-name: line;
+    animation-duration: 5s;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+@keyframes line {
+    0%{
+        width: 0%;
+        left: 0;
+    }
+    1%{
+        width: 10%;
+        left: 0%;
+    } 
+    30%{
+        width: 30%;
+        left: 0%;
+    }
+    50%{
+        width: 40%;
+        left: 5%;
+    }  
+    90%{
+        width: 20%;
+        left: 30%;
+    } 
+    100%{
+        width: 0%;
+        right: 0;
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://developerinsharah.github.io/Honey-Animation-Website/images/logo.png" alt="">
+        <ul>
+            <li>HOME</li>
+            <li>ABOUT</li>
+            <li>PRODUCT</li>
+            <li>BOOKING</li>
+            <li>CONTACT</li>
+        </ul>
+        <div class="icons">
+            <i class="ri-facebook-fill"></i>
+            <i class="ri-twitter-fill"></i>
+            <i class="ri-global-line"></i>
+            <i class="ri-linkedin-fill"></i>
+        </div>
+    </header>
+    <div class="body">
+        <div class="text">
+            <img src="https://developerinsharah.github.io/Honey-Animation-Website/images/leaf1.png" alt="" id="leaf1">
+            <h1>YOU CAN GET PURE HONEY HERE</h1>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered There are many variations of passages of Lorem Ipsum available, but the majority have suffered</p>
+            <button>BOOKING</button>
+            <img src="https://developerinsharah.github.io/Honey-Animation-Website/images/leaf2.png" alt="" id="a2">
+        </div> 
+        <div class="pic">
+            <img src="https://developerinsharah.github.io/Honey-Animation-Website/images/main-honey.png" alt="">
+        </div>
+    </div>
+    <img src="https://developerinsharah.github.io/Honey-Animation-Website/images/bee1.png" alt="" id="b1">
+    <img src="https://developerinsharah.github.io/Honey-Animation-Website/images/bee2.png" alt="" id="b2">
+    <img src="https://developerinsharah.github.io/Honey-Animation-Website/images/bee3.png" alt="" id="b3">
+    <img src="" alt="" id="b4">
+</body>
+</html>
